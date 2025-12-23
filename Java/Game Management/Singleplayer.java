@@ -1,9 +1,9 @@
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Singleplayer extends Game{
     private Boolean hasReachedEnd;
 
-    public Singleplayer(String titel, Genre genre, Date releaseDate, double price, int playtime, int review, Boolean hasReachedEnd){
+    public Singleplayer(String titel, Genre genre, LocalDate releaseDate, double price, int playtime, int review, Boolean hasReachedEnd){
         super(titel, genre, releaseDate, price, playtime, review);
         this.hasReachedEnd = hasReachedEnd;
     }

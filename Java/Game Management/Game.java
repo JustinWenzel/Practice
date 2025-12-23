@@ -1,14 +1,14 @@
-import java.sql.Date;
+import java.time.LocalDate;
 
 public abstract class Game{
     private String titel;
     private Genre genre;
-    private Date releaseDate;
+    private LocalDate releaseDate;
     private double price;
     private int playtime;
     private int review;
 
-    public Game(String titel, Genre genre, Date releaseDate, double price, int playtime, int review){
+    public Game(String titel, Genre genre, LocalDate releaseDate, double price, int playtime, int review){
         this.titel = titel;
         this.genre = genre;
         this.releaseDate = releaseDate;
@@ -17,7 +17,7 @@ public abstract class Game{
         this.review = review;
     }
 
-    public Game(String titel, Genre genre, Date releaseDate, double price, int review){
+    public Game(String titel, Genre genre, LocalDate releaseDate, double price, int review){
         this.titel = titel;
         this.genre = genre;
         this.releaseDate = releaseDate;
@@ -41,11 +41,11 @@ public abstract class Game{
         this.genre = genre;
     }
 
-    public Date getReleaseDate() {
+    public LocalDate getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
+    public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
     }
 

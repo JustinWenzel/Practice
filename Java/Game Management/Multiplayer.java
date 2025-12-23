@@ -1,10 +1,10 @@
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Multiplayer extends Game {
 
     private int maxPlayers;
 
-    public Multiplayer(String titel, Genre genre, Date releaseDate, double price, int playtime, int review, int maxPlayers){
+    public Multiplayer(String titel, Genre genre, LocalDate releaseDate, double price, int playtime, int review, int maxPlayers){
         super(titel, genre, releaseDate, price, playtime, review);
         this.maxPlayers = maxPlayers;
     }
